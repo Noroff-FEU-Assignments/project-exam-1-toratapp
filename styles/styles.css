@@ -1,4 +1,8 @@
+body {
+  font-size: 1em;
+}
 h1 {
-  font-family: "Baskerville";
+  font-family: "Quattrocento", "Baskerville", serif;
   font-weight: 700;
+  font-size: 2em;
 }
