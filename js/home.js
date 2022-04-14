@@ -6,6 +6,11 @@ async function getPosts() {
         const response = await fetch(url);
         const results = await response.json();
         console.log(results);
+
+        postsMobileContainer.innerHTML = "";
+
+        for(let i = 0; i < results.length; i++) {
+        }
     } catch(error) {
         console.warn(error);
         return postsMobileContainer.innerHTML = errorMessage("An error occured while fetching the posts")
