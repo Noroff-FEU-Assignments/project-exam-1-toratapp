@@ -13,8 +13,38 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
-h1 {
+
+h1,
+h2,
+h3 {
   font-family: "Quattrocento", "Baskerville", serif;
   font-weight: 700;
+}
+
+h1 {
   font-size: 2em;
+}
+
+img {
+  width: 100%;
+}
+
+.loader {
+  content: "";
+  width: 50px;
+  height: 50px;
+  border: 10px solid transparent;
+  border-top-color: #FFF;
+  border-radius: 50%;
+  animation: spinning 1.5s linear infinite;
+}
+
+@keyframes spinning {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.short-menu a {
+  display: block;
 }
