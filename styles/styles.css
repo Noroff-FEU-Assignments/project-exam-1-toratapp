@@ -16,7 +16,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+.cta {
   font-family: "Quattrocento", "Baskerville", serif;
   font-weight: 700;
 }
@@ -27,6 +28,80 @@ h1 {
 
 img {
   width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  position: relative;
+  background-color: #006d60;
+  padding: 15px 32px;
+  box-shadow: 0px 3px 10px 8px rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+.logo-and-hamburger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  width: 90px;
+}
+
+nav {
+  display: none;
+  position: fixed;
+  top: 91px;
+  background-color: #0f272f;
+  z-index: 1000;
+  right: 0px;
+  text-align: right;
+}
+
+nav li {
+  padding: 10px 30px 10px 30px;
+  display: block;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+nav li a {
+  color: #FFF;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+#hamburger-menu:checked ~ nav {
+  display: block;
+}
+
+header i {
+  color: #FFF;
+  font-size: 1.5em;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+.cta {
+  background: #004964;
+  border: solid 5px #0f272f;
+  color: #FFF;
+  padding: 9px;
+  text-decoration: none;
+  font-size: 1.3em;
+}
+.cta:hover {
+  border: dotted 5px #0f272f;
+  text-decoration: underline;
 }
 
 .loader {
