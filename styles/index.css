@@ -1,3 +1,28 @@
 .latest-posts__carousel {
     display: none;
 }
+
+.welcome-image-section h1 {
+    color: #FFF;
+}
+
+.welcome-image-section {
+    position: relative;
+}
+
+.welcome-image-desktop {
+    display: none;
+}
+
+.h1-mobile {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    margin: 0 0 0 -130px;
+    margin-left: -130px;
+    text-align: center;
+}
+
+.h1-desktop {
+    display: none;
+}

@@ -23,7 +23,7 @@ h3,
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 2.2em;
 }
 
 img {
@@ -118,6 +118,14 @@ ul {
   to {
     transform: rotate(1turn);
   }
+}
+
+footer {
+  color: #FFF;
+}
+
+footer a {
+  color: #FFF;
 }
 
 .short-menu a {
