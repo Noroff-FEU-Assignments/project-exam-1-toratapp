@@ -1,6 +1,8 @@
 const url = "https://teidsvag.com/onthebias-cms/wp-json/wp/v2/posts?_embed&per_page=12";
 const postsMobileContainer = document.querySelector(".latest-posts__mobile");
-const latestPostsCarousel = document.querySelector(".latest-posts__carousel");
+const carouselRowOne = document.querySelector(".row-one");
+const carouselRowTwo = document.querySelector(".row-two");
+const carouselRowThree = document.querySelector(".row-three");
 
 async function getPosts() {
     try {
@@ -8,7 +10,7 @@ async function getPosts() {
         const results = await response.json();
 
         postsMobileContainer.innerHTML = "";
-        latestPostsCarousel.innerHTML = "";
+        carouselRowOne.innerHTML = "";
 
         const firstFeaturedImage = results[0]._embedded['wp:featuredmedia']['0'].source_url;
         const firstAltText = results[0]._embedded['wp:featuredmedia']['0'].alt_text;
@@ -89,97 +91,90 @@ async function getPosts() {
                                                     ${fourthExcerpt}
                                                 </div>
                                             </div>`;
-        latestPostsCarousel.innerHTML += `  <div class="selected-row">
-                                                <div>
-                                                    <div>
-                                                        <img src="${firstFeaturedImage}" alt="${firstAltText}">
-                                                    </div>
-                                                    <h3>${firstTitle}</h3>
-                                                    ${firstExcerpt}
-                                                </div>
-                                                <div>
-                                                    <div>
-                                                        <img src="${secondFeaturedImage}" alt="${secondAltText}">
-                                                    </div>
-                                                    <h3>${secondTitle}</h3>
-                                                    ${secondExcerpt}
-                                                </div>
-                                                <div>
-                                                    <div>
-                                                        <img src="${thirdFeaturedImage}" alt="${thirdAltText}">
-                                                    </div>
-                                                    <h3>${thirdTitle}</h3>
-                                                    ${thirdExcerpt}
-                                                </div>
-                                                <div>
-                                                    <div>
-                                                        <img src="${fourthFeaturedImage}" alt="${fourthAltText}">
-                                                    </div>
-                                                    <h3>${fourthTitle}</h3>
-                                                    ${fourthExcerpt}
-                                                </div>
+        carouselRowOne.innerHTML += `   <div>
+                                            <div>
+                                                <img src="${firstFeaturedImage}" alt="${firstAltText}">
                                             </div>
-                                            <div class="display-none">
-                                                <div>
-                                                    <div>
-                                                        <img src="${fifthFeaturedImage}" alt="${fifthAltText}">
-                                                    </div>
-                                                    <h3>${fifthTitle}</h3>
-                                                    ${fifthExcerpt}
-                                                </div>
-                                                <div>
-                                                    <div>
-                                                        <img src="${sixthFeaturedImage}" alt="${sixthAltText}">
-                                                    </div>
-                                                    <h3>${sixthTitle}</h3>
-                                                    ${sixthExcerpt}
-                                                </div>
-                                                <div>
-                                                    <div>
-                                                        <img src="${seventhFeaturedImage}" alt="${seventhAltText}">
-                                                    </div>
-                                                    <h3>${seventhTitle}</h3>
-                                                    ${seventhExcerpt}
-                                                </div>
-                                                <div>
-                                                    <div>
-                                                        <img src="${eighthFeaturedImage}" alt="${eighthAltText}">
-                                                    </div>
-                                                    <h3>${eighthTitle}</h3>
-                                                    ${eighthExcerpt}
-                                                </div>
+                                            <h3>${firstTitle}</h3>
+                                            ${firstExcerpt}
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <img src="${secondFeaturedImage}" alt="${secondAltText}">
                                             </div>
-                                            <div class="display-none">
-                                                <div>
-                                                    <div>
-                                                        <img src="${ninthFeaturedImage}" alt="${ninthAltText}">
-                                                    </div>
-                                                    <h3>${ninthTitle}</h3>
-                                                    ${ninthExcerpt}
-                                                </div>
-                                                <div>
-                                                    <div>
-                                                        <img src="${tenthFeaturedImage}" alt="${tenthAltText}">
-                                                    </div>
-                                                    <h3>${tenthTitle}</h3>
-                                                    ${tenthExcerpt}
-                                                </div>
-                                                <div>
-                                                    <div>
-                                                        <img src="${eleventhFeaturedImage}" alt="${eleventhAltText}">
-                                                    </div>
-                                                    <h3>${eleventhTitle}</h3>
-                                                    ${eleventhExcerpt}
-                                                </div>
-                                                <div>
-                                                    <div>
-                                                        <img src="${twelvthFeaturedImage}" alt="${twelvthAltText}">
-                                                    </div>
-                                                    <h3>${twelvthTitle}</h3>
-                                                    ${twelvthExcerpt}
-                                                </div>
+                                            <h3>${secondTitle}</h3>
+                                            ${secondExcerpt}
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <img src="${thirdFeaturedImage}" alt="${thirdAltText}">
                                             </div>
-                                            `
+                                            <h3>${thirdTitle}</h3>
+                                            ${thirdExcerpt}
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <img src="${fourthFeaturedImage}" alt="${fourthAltText}">
+                                            </div>
+                                            <h3>${fourthTitle}</h3>
+                                            ${fourthExcerpt}
+                                        </div>`
+        carouselRowTwo.innerHTML += `   <div>
+                                            <div>
+                                                <img src="${fifthFeaturedImage}" alt="${fifthAltText}">
+                                            </div>
+                                            <h3>${fifthTitle}</h3>
+                                            ${fifthExcerpt}
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <img src="${sixthFeaturedImage}" alt="${sixthAltText}">
+                                            </div>
+                                            <h3>${sixthTitle}</h3>
+                                            ${sixthExcerpt}
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <img src="${seventhFeaturedImage}" alt="${seventhAltText}">
+                                            </div>
+                                            <h3>${seventhTitle}</h3>
+                                            ${seventhExcerpt}
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <img src="${eighthFeaturedImage}" alt="${eighthAltText}">
+                                            </div>
+                                            <h3>${eighthTitle}</h3>
+                                            ${eighthExcerpt}
+                                        </div>`
+        carouselRowThree.innerHTML += ` <div>
+                                            <div>
+                                                <img src="${ninthFeaturedImage}" alt="${ninthAltText}">
+                                            </div>
+                                            <h3>${ninthTitle}</h3>
+                                            ${ninthExcerpt}
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <img src="${tenthFeaturedImage}" alt="${tenthAltText}">
+                                            </div>
+                                            <h3>${tenthTitle}</h3>
+                                            ${tenthExcerpt}
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <img src="${eleventhFeaturedImage}" alt="${eleventhAltText}">
+                                            </div>
+                                            <h3>${eleventhTitle}</h3>
+                                            ${eleventhExcerpt}
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <img src="${twelvthFeaturedImage}" alt="${twelvthAltText}">
+                                            </div>
+                                            <h3>${twelvthTitle}</h3>
+                                            ${twelvthExcerpt}
+                                        </div>`
     } catch(error) {
         console.warn(error);
         return postsMobileContainer.innerHTML = errorMessage("An error occured while fetching the posts")

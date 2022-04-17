@@ -79,14 +79,23 @@
         position: relative;
     }
 
-    .arrow-next {
+    .arrow-next,
+    .arrow-prev {
         height: 60px;
         width: 60px;
         display: block;
         position: absolute;
-        top: 50%;
-        margin-top: -30px;
+        top: 120px;
+        box-shadow: 0px 3px 12px 8px rgba(0, 0, 0, 0.6);
+        border-radius: 50%;
+    }
+
+    .arrow-next {
         right: 0;
+    }
+
+    .arrow-prev {
+        left: 0;
     }
 
     .selected-row {
