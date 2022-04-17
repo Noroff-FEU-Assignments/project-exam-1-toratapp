@@ -12,6 +12,8 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  width: 100%;
+  max-width: 100%;
 }
 
 h1,
