@@ -23,12 +23,23 @@
     display: none;
 }
 
+.latest-posts-section,
+.other-pages-section,
+.welcome-image-desktop {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
 .latest-posts__carousel {
     display: none;
 }
 
+.arrow-next {
+    display: none;
+}
+
 .latest-posts-section {
-    padding-bottom: 13px;
+    padding-bottom: 25px;
     margin-bottom: 50px;
 }
 
@@ -59,7 +70,7 @@
 }
 
 .latest-posts-section .cta {
-    margin: 0 0 0 13px;
+    margin: auto;
     display: block;
     height: 23px;
     width: 160px;
@@ -68,4 +79,8 @@
 
 .other-pages-section {
     padding-bottom: 2px;
+}
+
+.other-pages-section h2 {
+    display: none;
 }

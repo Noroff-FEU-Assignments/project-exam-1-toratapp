@@ -30,4 +30,81 @@
         text-align: center;
         margin: 0 0 0 -232px;
     }
+
+    .latest-posts-section {
+        padding-bottom: 63px;
+        margin-bottom: 0px;
+    }
+
+    .latest-posts-mobile-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0px;
+    }
+
+    .other-pages-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 26px;
+        padding: 13px 13px 50px 13px;
+    }
+
+    .other-pages-section h2 {
+        display: block;
+        grid-column: -1/1;
+        margin-bottom: 0px;
+    }
+
+    .other-pages-section p {
+        margin-bottom: 13px;
+    }
+
+    footer {
+        width: 380px;
+        margin: 43px auto 0px auto;
+    }
+}
+
+@media (min-width: 1000px) {
+    .latest-posts__mobile {
+        display: none;
+    }
+
+    .latest-posts__carousel {
+        display: block;
+        position: relative;
+    }
+
+    .latest-posts-section {
+        position: relative;
+    }
+
+    .arrow-next {
+        height: 60px;
+        width: 60px;
+        display: block;
+        position: absolute;
+        top: 50%;
+        margin-top: -30px;
+        right: 0;
+    }
+
+    .selected-row {
+        display: flex;
+        margin: 13px 25px;
+        gap: 13px;
+    }
+
+    .other-pages-section h2 {
+        display: none;
+    }
+}
+
+@media (min-width: 1650px) {
+    .latest-posts-section,
+    .other-pages-section,
+    .welcome-image-desktop {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
