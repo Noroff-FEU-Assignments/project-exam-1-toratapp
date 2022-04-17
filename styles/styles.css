@@ -165,8 +165,14 @@ footer a {
   justify-content: space-between;
 }
 
-.short-menu {
+.short-menu,
+.social-media,
+.copyright {
   background:#006d60;
+}
+
+.short-menu,
+.social-media {
   padding: 5px 13px 5px 13px;
 }
 
@@ -192,4 +198,18 @@ footer a {
 .social-media__icons {
   font-size: 2.9em;
   margin-bottom: 5px;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 0.9em;
+  font-weight: 300;
+  padding: 3px;
+  width: 235px;
+  margin: 35px auto 8px auto;
+}
+
+.copyright p {
+  padding: 0px;
+  margin: 0px;
 }
