@@ -26,31 +26,31 @@ async function getPosts() {
         const fourthExcerpt = results[3].excerpt.rendered;
 
         postsMobileContainer.innerHTML += ` <div>
-                                                <div>
+                                                <div class="margin-13">
                                                     <img src="${firstFeaturedImage}" alt="${firstAltText}">
                                                 </div>
-                                                <h2>${firstTitle}</h2>
+                                                <h3>${firstTitle}</h3>
                                                 ${firstExcerpt}
                                             </div>
                                             <div>
-                                                <div>
+                                                <div class="margin-13">
                                                     <img src="${secondFeaturedImage}" alt="${secondAltText}">
                                                 </div>
-                                                <h2>${secondTitle}</h2>
+                                                <h3>${secondTitle}</h3>
                                                 ${secondExcerpt}
                                             </div>
                                             <div>
-                                                <div>
+                                                <div class="margin-13">
                                                     <img src="${thirdFeaturedImage}" alt="${thirdAltText}">
                                                 </div>
-                                                <h2>${thirdTitle}</h2>
+                                                <h3>${thirdTitle}</h3>
                                                 ${thirdExcerpt}
                                             </div>
                                             <div>
-                                                <div>
+                                                <div class="margin-13">
                                                     <img src="${fourthFeaturedImage}" alt="${fourthAltText}">
                                                 </div>
-                                                <h2>${fourthTitle}</h2>
+                                                <h3>${fourthTitle}</h3>
                                                 ${fourthExcerpt}
                                             </div>`;
     } catch(error) {

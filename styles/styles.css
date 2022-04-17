@@ -20,10 +20,19 @@ h3,
 .cta {
   font-family: "Quattrocento", "Baskerville", serif;
   font-weight: 700;
+  color: #004964;
 }
 
 h1 {
   font-size: 2.2em;
+}
+
+h2 {
+  font-size: 1.6em;
+}
+
+h3 {
+  font-size: 1.3em;
 }
 
 img {
@@ -50,6 +59,28 @@ header {
 
 .logo img {
   width: 90px;
+}
+
+.light-blue-bg {
+  background: #e4f9f4;
+}
+
+.margin-auto {
+  margin: auto;
+}
+
+.margin-25 {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.margin-13 {
+  margin-left: 13px;
+  margin-right: 13px;
+}
+
+.max-width-1600 {
+  max-width: 1600px;
 }
 
 nav {
@@ -122,12 +153,43 @@ ul {
 
 footer {
   color: #FFF;
+  margin-top: 43px;
 }
 
 footer a {
   color: #FFF;
 }
 
+.short-menu-and-socials {
+  display: flex;
+  justify-content: space-between;
+}
+
+.short-menu {
+  background:#006d60;
+  padding: 5px 13px 5px 13px;
+}
+
+.short-menu h4 {
+  text-transform: uppercase;
+  margin: 0 0 5px 0;
+}
+
 .short-menu a {
   display: block;
+  margin: 0 0 5px 0;
+}
+
+.social-media p {
+  margin: 0 0 5px 0;
+}
+
+.social-media__icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-media__icons {
+  font-size: 2.9em;
+  margin-bottom: 5px;
 }

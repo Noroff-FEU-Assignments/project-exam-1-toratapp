@@ -1,7 +1,3 @@
-.latest-posts__carousel {
-    display: none;
-}
-
 .welcome-image-section h1 {
     color: #FFF;
 }
@@ -25,4 +21,51 @@
 
 .h1-desktop {
     display: none;
+}
+
+.latest-posts__carousel {
+    display: none;
+}
+
+.latest-posts-section {
+    padding-bottom: 13px;
+    margin-bottom: 50px;
+}
+
+.latest-posts-section h2 {
+    margin-top: 0px;
+    padding-top: 50px;
+    margin-bottom: 25px;
+}
+
+.latest-posts-section h3,
+.latest-posts-section p,
+.other-pages-section h3,
+.other-pages-section p {
+    margin-left: 13px;
+    margin-right: 13px;
+}
+
+.latest-posts-section h3,
+.other-pages-section h3 {
+    margin-top: 13px;
+    margin-bottom: 5px;
+}
+
+.latest-posts-section p,
+.other-pages-section p {
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+
+.latest-posts-section .cta {
+    margin: 0 0 0 13px;
+    display: block;
+    height: 23px;
+    width: 160px;
+    text-align: center;
+}
+
+.other-pages-section {
+    padding-bottom: 2px;
 }
