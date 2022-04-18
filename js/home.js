@@ -16,6 +16,7 @@ async function getPosts() {
         const firstAltText = results[0]._embedded['wp:featuredmedia']['0'].alt_text;
         const firstTitle = results[0].title.rendered;
         const firstExcerpt = results[0].excerpt.rendered;
+        const firstId = results[0].id;
         const secondFeaturedImage = results[1]._embedded['wp:featuredmedia']['0'].source_url;
         const secondAltText = results[1]._embedded['wp:featuredmedia']['0'].alt_text;
         const secondTitle = results[1].title.rendered;
@@ -62,13 +63,13 @@ async function getPosts() {
         const twelvthExcerpt = results[11].excerpt.rendered;
 
         postsMobileContainer.innerHTML += ` <div class="latest-posts-mobile-container">
-                                                <div>
+                                                <div><a class="blog-post-clickable" href="blog-post.html?id=${firstId}">
                                                     <div class="margin-13">
                                                         <img src="${firstFeaturedImage}" alt="${firstAltText}">
                                                     </div>
                                                     <h3>${firstTitle}</h3>
                                                     ${firstExcerpt}
-                                                </div>
+                                                </a></div>
                                                 <div>
                                                     <div class="margin-13">
                                                         <img src="${secondFeaturedImage}" alt="${secondAltText}">

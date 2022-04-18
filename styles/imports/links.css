@@ -18,6 +18,10 @@ a {
     text-decoration: underline;
 }
 
+.blog-post-clickable {
+    color: #0f272f !important;
+}
+
 footer a {
     color: #FFF;
 }
