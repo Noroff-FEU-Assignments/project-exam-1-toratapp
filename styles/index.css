@@ -34,7 +34,8 @@
     display: none;
 }
 
-.arrow-next {
+.arrow-next,
+.arrow-prev {
     display: none;
 }
 

@@ -25,11 +25,12 @@ arrowPrev.onclick = function(event){
 }
 
 function carouselChangeRow() {
-    for (let row of carouselRows) {
-        row.classList.remove("selected-row");
-        row.classList.add("display-none");
+    for (let carouselRow of carouselRows) {
+        carouselRow.classList.remove('selected-row');
+        carouselRow.classList.add('display-none');
     }
-    carouselRows[rowPosition].classList.add("selected-row");
+    
+    carouselRows[rowPosition].classList.add('selected-row');
 }
 
 function nextRow() {
