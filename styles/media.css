@@ -6,7 +6,7 @@
 
 @media (min-width: 600px) {
     body {
-        background: url("../images/background-desktop.JPG") no-repeat center center
+        background: url("../images/background-desktop.svg") no-repeat center center
             fixed;
     }
 
@@ -46,7 +46,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 26px;
-        padding: 13px 13px 50px 13px;
+        padding: 13px 13px 60px 13px;
     }
 
     .other-pages-section h2 {
@@ -65,7 +65,21 @@
     }
 }
 
+@media (min-width: 800px) {
+    .h1-desktop {
+        top: 81%;
+    }
+}
+
 @media (min-width: 1000px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .h1-desktop {
+        top: 83%;
+    }
+
     .latest-posts__mobile {
         display: none;
     }
@@ -77,31 +91,53 @@
 
     .latest-posts-section {
         position: relative;
+        padding-bottom: 90px;
     }
 
     .arrow-next,
     .arrow-prev {
-        height: 60px;
-        width: 60px;
+        height: 50px;
+        width: 50px;
         display: block;
         position: absolute;
-        top: 120px;
-        box-shadow: 0px 3px 12px 8px rgba(0, 0, 0, 0.6);
+        top: 40px;
+        box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, 0.4);
         border-radius: 50%;
     }
 
-    .arrow-next {
+    .arrow-next,
+    .arrow-prev {
         right: 0;
     }
 
+    .arrow-next {
+        margin-right: 13px;
+        cursor: pointer;
+    }
+
     .arrow-prev {
-        left: 0;
+        margin-right: 80px;
+        cursor: pointer;
     }
 
     .selected-row {
         display: flex;
-        margin: 13px 25px;
+        margin: 13px;
         gap: 13px;
+        animation: fadeIn 0.8s linear;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    .other-pages-section {
+        padding: 13px 13px 70px 13px;
     }
 
     .other-pages-section h2 {
@@ -109,11 +145,42 @@
     }
 }
 
-@media (min-width: 1650px) {
+@media (min-width: 1600px) {
+    .h1-desktop {
+        top: 86%;
+    }
+
     .latest-posts-section,
     .other-pages-section,
     .welcome-image-desktop {
         margin-left: auto;
         margin-right: auto;
     }
+
+    .latest-posts-section {
+        padding-bottom: 110px;
+    }
+
+    .other-pages-section {
+        padding: 13px 0px 70px 0px;
+    }
+
+    .other-pages-section img {
+        width: 774px;
+    }
+
+    .sewing-glossary-page,
+    .gallery-page {
+        display: grid;
+    }
+
+    .sewing-glossary-page {
+        justify-content: right;
+    }
+
+    .gallery-page {
+        justify-content: left;
+    }
+
+
 }

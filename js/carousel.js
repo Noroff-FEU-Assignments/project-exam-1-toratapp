@@ -31,6 +31,7 @@ function carouselChangeRow() {
     }
     
     carouselRows[rowPosition].classList.add('selected-row');
+    carouselRows[rowPosition].classList.remove('display-none');
 }
 
 function nextRow() {

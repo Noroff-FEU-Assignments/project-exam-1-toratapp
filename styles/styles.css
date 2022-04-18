@@ -1,3 +1,5 @@
+@import "imports/links.css";
+
 body {
   font-family: "Lato", "Verdana", sans-serif;
   font-size: 1em;
@@ -19,8 +21,7 @@ body {
 
 h1,
 h2,
-h3,
-.cta {
+h3 {
   font-family: "Quattrocento", "Baskerville", serif;
   font-weight: 700;
   color: #004964;
@@ -40,10 +41,6 @@ h3 {
 
 img {
   width: 100%;
-}
-
-a {
-  text-decoration: none;
 }
 
 .display-none {
@@ -130,19 +127,6 @@ ul {
   padding: 0px;
 }
 
-.cta {
-  background: #004964;
-  border: solid 5px #0f272f;
-  color: #FFF;
-  padding: 9px;
-  text-decoration: none;
-  font-size: 1.3em;
-}
-.cta:hover {
-  border: dotted 5px #0f272f;
-  text-decoration: underline;
-}
-
 .loader {
   content: "";
   width: 50px;
@@ -162,10 +146,6 @@ ul {
 footer {
   color: #FFF;
   margin-top: 43px;
-}
-
-footer a {
-  color: #FFF;
 }
 
 .short-menu-and-socials {

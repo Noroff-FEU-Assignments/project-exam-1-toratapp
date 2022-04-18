@@ -1,0 +1,23 @@
+a {
+    text-decoration: none;
+  }
+
+.cta {
+    background: #004964;
+    border: solid 5px #0f272f;
+    color: #FFF;
+    padding: 9px;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-family: "Quattrocento", "Baskerville", serif;
+    font-weight: 700;
+}
+
+.cta:hover {
+    border: dotted 5px #0f272f;
+    text-decoration: underline;
+}
+
+footer a {
+    color: #FFF;
+}
