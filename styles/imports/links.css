@@ -11,6 +11,7 @@ a {
     font-size: 1.3em;
     font-family: "Quattrocento", "Baskerville", serif;
     font-weight: 700;
+    text-align: center;
 }
 
 .cta:hover {

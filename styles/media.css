@@ -136,6 +136,12 @@
         }
     }
 
+    .latest-posts-section .cta {
+        font-size: 1.5em;
+        height: 27px;
+        width: 195px;
+    }
+
     .other-pages-section {
         padding: 13px 13px 70px 13px;
     }
@@ -159,6 +165,12 @@
 
     .latest-posts-section {
         padding-bottom: 110px;
+    }
+
+    .latest-posts-section .cta {
+        font-size: 1.8em;
+        height: 32px;
+        width: 235px;
     }
 
     .other-pages-section {

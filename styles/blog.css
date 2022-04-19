@@ -1,0 +1,14 @@
+h1 {
+    padding: 40px 0 50px 13px;
+    margin: 0;
+}
+
+.blog-posts-section {
+    padding: 0 13px 50px 13px;
+}
+
+.earlier-posts-link {
+    display: block;
+    width: 160px;
+    cursor: pointer;
+}

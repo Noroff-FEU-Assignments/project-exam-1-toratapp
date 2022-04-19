@@ -178,7 +178,7 @@ async function getPosts() {
                                         </div>`
     } catch(error) {
         console.warn(error);
-        return postsMobileContainer.innerHTML = errorMessage("An error occured while fetching the posts")
+        return postsMobileContainer.innerHTML = errorMessage("An error occured while fetching the posts");
     }
 }
 
