@@ -1,11 +1,15 @@
 const url = "https://teidsvag.com/onthebias-cms/wp-json/wp/v2/posts?_embed";
-const postsContainer = document.querySelector(".blog-posts-section");
+const postsContainer = document.querySelector(".blog-posts-container");
+const urlPageTwo = "https://teidsvag.com/onthebias-cms/wp-json/wp/v2/posts?_embed&page=2";
+const postsContainerPageTwo = document.querySelector(".blog-posts-page-2-container");
+const earlierPostsLink = document.querySelector(".earlier-posts-link");
 
 async function getPosts() {
     try {
         const response = await fetch(url);
         const results = await response.json();
-        console.log(results);
+
+        postsContainer.innerHTML = "";
 
         for(let i = 0; i < results.length; i++) {
 
@@ -19,6 +23,15 @@ async function getPosts() {
                 const featuredImage = featuredMedia[i].source_url;
                 const altText = featuredMedia[i].alt_text;
 
+                postsContainer.innerHTML += `   <a class="blog-post-clickable" href="blog-post.html?id=${postId}"><div class="blog__blog-post">
+                                                    <div>
+                                                        <img src="${featuredImage}" alt="${altText}" />
+                                                    </div>                                   
+                                                    <div class="post-heading-and-excerpt">
+                                                        <h2>${title}</h2>
+                                                        ${excerpt}
+                                                    </div>
+                                                </div></a>`
             }
         }
     } catch(error) {
@@ -28,3 +41,22 @@ async function getPosts() {
 }
 
 getPosts();
+
+async function getNextPosts() {
+    try {
+        const response = await fetch(urlPageTwo);
+        const results = await response.json();
+        console.log(results);
+
+        postsContainerPageTwo.innerHTML ="";
+    } catch(error) {
+        console.warn(error);
+        return postsContainer.innerHTML = errorMessage("An error occured while fetching the posts");
+    }
+}
+
+earlierPostsLink.onclick = function(event){
+    postsContainerPageTwo.classList.remove('display-none');
+    earlierPostsLink.classList.add('display-none');
+    getNextPosts();
+}

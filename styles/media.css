@@ -6,7 +6,7 @@
 
 @media (min-width: 600px) {
     body {
-        background: url("../images/background-desktop.JPG") no-repeat center center
+        background: url("../images/background-desktop.png") no-repeat center center
             fixed;
     }
 
@@ -149,6 +149,29 @@
     .other-pages-section h2 {
         display: none;
     }
+
+    .blog-posts-h1 {
+        padding: 40px 70px 50px 70px;
+    }
+
+    .blog-posts-section {
+        padding: 0 70px 50px 70px;
+    }
+
+    .blog-posts-section h2 {
+        margin: 0 0 15px 0;
+    }
+
+    .blog__blog-post {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        gap: 100px;
+    }
+    
+    .blog__blog-post > * {
+        flex: 1;
+    }
 }
 
 @media (min-width: 1600px) {
@@ -194,5 +217,22 @@
         justify-content: left;
     }
 
+    .blog-posts-h1,
+    .blog-posts-section {
+        margin: 0px auto;
+        max-width: 1320px;
+    }
+
+    .blog-posts-h1 {
+        padding: 40px 140px 50px 140px;
+    }
+
+    .blog-posts-section {
+        padding: 0 140px 50px 140px;
+    }
+
+    .blog__blog-post {
+        gap: 120px;
+    }
 
 }

@@ -1,14 +1,29 @@
-h1 {
-    padding: 40px 0 50px 13px;
-    margin: 0;
+.blog-posts-h1 {
+    padding: 40px 13px 50px 13px;
+    margin: 0 25px;
 }
 
 .blog-posts-section {
     padding: 0 13px 50px 13px;
+    margin: 0 25px;
+    max-width: 1600px;
+}
+
+.blog-posts-section h2 {
+    margin: 15px 0 5px 0;
+}
+
+.blog-posts-section p {
+    margin: 0;
+}
+
+.blog__blog-post {
+    margin-bottom: 50px;
 }
 
 .earlier-posts-link {
     display: block;
     width: 160px;
     cursor: pointer;
+    margin: auto;
 }

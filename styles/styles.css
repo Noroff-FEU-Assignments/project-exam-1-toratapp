@@ -131,7 +131,7 @@ ul {
   width: 50px;
   height: 50px;
   border: 10px solid transparent;
-  border-top-color: #FFF;
+  border-top-color: #006d60;
   border-radius: 50%;
   animation: spinning 1.5s linear infinite;
 }
@@ -144,7 +144,7 @@ ul {
 
 footer {
   color: #FFF;
-  margin-top: 43px;
+  margin-top: 50px;
 }
 
 .short-menu-and-socials {

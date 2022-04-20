@@ -4,18 +4,6 @@ const totalRows = carouselRows.length;
 const arrowNext = document.querySelector(".arrow-next")
 const arrowPrev = document.querySelector(".arrow-prev");
 
-// carouselRows.forEach(function(arrow){
-//     arrow.onclick = function(event){
-//         document.querySelector(".selected-row").classList.remove(".selected-row");
-//     }
-// })
-
-// function carouselChangeRow(){
-//     arrowNext.onclick = function(event){
-//         document.querySelector(".selected-row").classList.remove("selected-row");
-//     }
-// }
-
 arrowNext.onclick = function(event){
     nextRow();
 }
