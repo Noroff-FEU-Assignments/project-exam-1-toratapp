@@ -27,3 +27,8 @@
     cursor: pointer;
     margin: auto;
 }
+
+.more-blog-posts-loader {
+    margin: auto;
+    margin-bottom: 20px;
+}

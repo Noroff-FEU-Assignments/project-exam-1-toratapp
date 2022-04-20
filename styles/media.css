@@ -61,7 +61,7 @@
 
     footer {
         width: 380px;
-        margin: 43px auto 0px auto;
+        margin: 50px auto 0px auto;
     }
 }
 
@@ -72,8 +72,28 @@
 }
 
 @media (min-width: 1000px) {
+    nav {
+        display: block;
+        position: static;
+        font-size: 1.2em;
+        background: none;
+    }
+
+    nav li {
+        display: inline-block;
+        padding: 0 0 0 50px;
+      }
+
+    header label {
+        display: none;
+    }
+
     h1 {
         font-size: 2.5em;
+    }
+
+    .cta {
+        font-size: 1.5em;
     }
 
     .h1-desktop {
@@ -137,9 +157,13 @@
     }
 
     .latest-posts-section .cta {
-        font-size: 1.5em;
         height: 27px;
         width: 195px;
+    }
+
+    .blog-posts-section .cta {
+        width: 182px;
+        height: 26px;
     }
 
     .other-pages-section {
@@ -175,6 +199,10 @@
 }
 
 @media (min-width: 1600px) {
+    .cta {
+        font-size: 1.8em;
+    }
+
     .h1-desktop {
         top: 86%;
     }
@@ -191,9 +219,13 @@
     }
 
     .latest-posts-section .cta {
-        font-size: 1.8em;
         height: 32px;
         width: 235px;
+    }
+
+    .blog-posts-section .cta {
+        width: 225px;
+        height: 32px;
     }
 
     .other-pages-section {

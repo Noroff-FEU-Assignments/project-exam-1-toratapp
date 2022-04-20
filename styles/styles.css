@@ -104,6 +104,11 @@ nav li {
   text-transform: uppercase;
 }
 
+nav li:hover {
+  text-decoration: underline;
+  text-decoration-color: #FFF;
+}
+
 nav li a {
   color: #FFF;
 }
@@ -155,7 +160,7 @@ footer {
 .short-menu,
 .social-media,
 .copyright {
-  background:#006d60;
+  background: rgba(0, 109, 96, 0.75);
 }
 
 .short-menu,

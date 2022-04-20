@@ -46,9 +46,32 @@ async function getNextPosts() {
     try {
         const response = await fetch(urlPageTwo);
         const results = await response.json();
-        console.log(results);
 
         postsContainerPageTwo.innerHTML ="";
+
+        for(let i = 0; i < results.length; i++) {
+
+            const title = results[i].title.rendered;
+            const excerpt = results[i].excerpt.rendered;
+            const postId = results[i].id;
+            const featuredMedia = results[i]['_embedded']['wp:featuredmedia'];
+
+            for(let i = 0; i < featuredMedia.length; i++) {
+
+                const featuredImage = featuredMedia[i].source_url;
+                const altText = featuredMedia[i].alt_text;
+
+                postsContainerPageTwo.innerHTML += `   <a class="blog-post-clickable" href="blog-post.html?id=${postId}"><div class="blog__blog-post">
+                                                    <div>
+                                                        <img src="${featuredImage}" alt="${altText}" />
+                                                    </div>                                   
+                                                    <div class="post-heading-and-excerpt">
+                                                        <h2>${title}</h2>
+                                                        ${excerpt}
+                                                    </div>
+                                                </div></a>`
+            }
+        }
     } catch(error) {
         console.warn(error);
         return postsContainer.innerHTML = errorMessage("An error occured while fetching the posts");
@@ -57,6 +80,5 @@ async function getNextPosts() {
 
 earlierPostsLink.onclick = function(event){
     postsContainerPageTwo.classList.remove('display-none');
-    earlierPostsLink.classList.add('display-none');
     getNextPosts();
 }
