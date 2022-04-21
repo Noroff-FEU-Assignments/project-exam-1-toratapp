@@ -24,6 +24,18 @@ a {
     text-decoration: underline;
 }
 
+.text-link {
+    color: #e52f84;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+.text-link:hover {
+    text-decoration: underline;
+    text-decoration-color: #e52f84;
+}
+
 .blog-post-clickable {
     color: #0f272f !important;
 }

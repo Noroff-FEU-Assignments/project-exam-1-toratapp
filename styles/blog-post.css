@@ -1,0 +1,18 @@
+h1 {
+    margin: 0;
+    padding: 40px 13px 50px 13px;
+}
+
+.date-and-category {
+    margin: 0;
+}
+
+.post-categories a {
+    text-decoration: underline;
+    margin-right: 8px;
+}
+
+.date-and-category {
+    color: #006d60;
+    font-style: italic;
+}

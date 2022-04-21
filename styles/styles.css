@@ -46,6 +46,10 @@ img {
   display: none;
 }
 
+.display-block {
+  display: block;
+}
+
 header {
   position: relative;
   background-color: #006d60;

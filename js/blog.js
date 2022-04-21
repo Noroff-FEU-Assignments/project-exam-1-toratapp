@@ -31,7 +31,7 @@ async function getPosts() {
                                                         <h2>${title}</h2>
                                                         ${excerpt}
                                                     </div>
-                                                </div></a>`
+                                                </div></a>`;
             }
         }
     } catch(error) {
@@ -69,7 +69,7 @@ async function getNextPosts() {
                                                         <h2>${title}</h2>
                                                         ${excerpt}
                                                     </div>
-                                                </div></a>`
+                                                </div></a>`;
             }
         }
     } catch(error) {
