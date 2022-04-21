@@ -1,10 +1,14 @@
+.blog-post-container {
+    padding-bottom: 100px;
+}
+
 h1 {
     margin: 0;
-    padding: 40px 13px 50px 13px;
+    padding: 40px 0 15px 0;
 }
 
 .date-and-category {
-    margin: 0;
+    margin: 0 0 40px 0;
 }
 
 .post-categories a {
@@ -15,4 +19,28 @@ h1 {
 .date-and-category {
     color: #006d60;
     font-style: italic;
+}
+
+.main {
+    padding: 0px 13px 50px 13px;
+    margin: 0 25px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+figure {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.categories-section h3 {
+    margin-bottom: 10px;
+}
+
+.category-links > * {
+    margin-bottom: 5px;
 }

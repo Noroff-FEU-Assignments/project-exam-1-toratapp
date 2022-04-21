@@ -2,37 +2,38 @@ const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
 const url = "https://teidsvag.com/onthebias-cms/wp-json/wp/v2/posts/" + id + "?_embed";
-const blogPostContainer = document.querySelector(".blog-post-container");
 const urlCategories = "https://teidsvag.com/onthebias-cms/wp-json/wp/v2/categories";
-const categoriesContainer = document.querySelector(".category-links");
+const loader = document.querySelector(".loader");
 const h1 = document.querySelector("h1");
 const publishedDate = document.querySelector(".published-date");
 const postCategories = document.querySelector(".post-categories");
-const loader = document.querySelector(".loader");
+const postContentContainer = document.querySelector(".post-content");
+const categoriesContainer = document.querySelector(".category-links");
 
 async function getPost() {
     try {
         const response = await fetch(url);
         const results = await response.json();
-        // console.log(results);
+        console.log(results);
 
         loader.style.display = "none";
         
         const date = results.date;
         const shorterDate = date.substring(0,10);
         const title = results.title.rendered;
-        const excerpt = results.excerpt.rendered;
+        const content = results.content.rendered;
 
         document.title = `${title} - On the bias`;
         h1.innerHTML = title;
         publishedDate.innerHTML = shorterDate;
+        postContentContainer.innerHTML = content;
 
         const categoriesArray1 = results['_embedded']['wp:term'];
         const categoriesArray2 = categoriesArray1[0];
 
         for(let i = 0; i < categoriesArray2.length; i++) {
+
             const categories = categoriesArray2[i].name;
-            console.log(categories);
 
             postCategories.innerHTML += `<a>${categories}</a>`;
         }
