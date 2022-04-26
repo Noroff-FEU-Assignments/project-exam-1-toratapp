@@ -22,8 +22,11 @@ async function getPost() {
         const shorterDate = date.substring(0,10);
         const title = results.title.rendered;
         const content = results.content.rendered;
+        const excerpt = results.excerpt.rendered;
+        const plainExcerpt = excerpt.replace(/<[^>]+>/g, '');
 
         document.title = `${title} - On the bias`;
+        document.querySelector('meta[name="description"]').content += `${plainExcerpt}`;
         h1.innerHTML = title;
         publishedDate.innerHTML = shorterDate;
         postContentContainer.innerHTML = content;
