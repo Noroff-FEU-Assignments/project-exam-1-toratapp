@@ -97,6 +97,11 @@
     .blog__blog-post > * {
         flex: 1;
     }
+
+    .close-button {
+        margin-right: 4%;
+        top: 4%;
+    }
 }
 
 @media (min-width: 1000px) {
@@ -229,6 +234,10 @@
     .text-and-image > * {
         flex: 1;
     }
+
+    .modal {
+        width: 80%;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -239,6 +248,11 @@
 
     .text-and-image {
         gap: 60px;
+    }
+
+    .modal {
+        width: auto;
+        height: 80%;
     }
 }
 
@@ -332,5 +346,10 @@
     .about__main {
     max-width: 1320px;
     margin: auto;
+    }
+
+    .modal {
+        width: auto;
+        height: 85%;
     }
 }

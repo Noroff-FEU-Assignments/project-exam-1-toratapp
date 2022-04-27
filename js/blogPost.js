@@ -9,12 +9,12 @@ const publishedDate = document.querySelector(".published-date");
 const postCategories = document.querySelector(".post-categories");
 const postContentContainer = document.querySelector(".post-content");
 const categoriesContainer = document.querySelector(".category-links");
+const blogPostContainer = document.querySelector(".blog-post-container");
 
 async function getPost() {
     try {
         const response = await fetch(url);
         const results = await response.json();
-        console.log(results);
 
         loader.style.display = "none";
         
@@ -40,13 +40,52 @@ async function getPost() {
 
             postCategories.innerHTML += `<a>${categories}</a>`;
         }
+
+        makeModal();
     } catch(error) {
         console.warn(error);
-        return postsContainer.innerHTML = errorMessage("An error occured while fetching the posts");
+        return postContentContainer.innerHTML = errorMessage("An error occured while fetching the posts");
     }
 }
 
 getPost();
+
+function makeModal() {
+    const allImages = document.querySelectorAll(".wp-block-image");
+    const backdropContainer = document.querySelector(".backdrop-container");
+    const closeButton = document.querySelector(".close-button");
+
+    allImages.forEach((image) => {
+        image.onclick = function (event) {
+            event.target.classList.add("modal");
+            backdropContainer.classList.add("modal-backdrop");
+            closeButton.style.display = "block";
+            
+            document.onkeydown = function (e) {
+                if (e.key === "Escape") {
+                    closeButton.style.display = "none";
+                    event.target.classList.remove("modal");
+                    backdropContainer.classList.remove("modal-backdrop");
+                }
+            }
+
+            closeButton.onclick = function () {
+                closeButton.style.display = "none";
+                event.target.classList.remove("modal");
+                backdropContainer.classList.remove("modal-backdrop");
+            }
+
+            document.onclick = function (click) {
+                const containsImage = image.contains(click.target);
+                if (!containsImage) {
+                closeButton.style.display = "none";
+                event.target.classList.remove("modal");
+                backdropContainer.classList.remove("modal-backdrop");
+                }
+            }
+        }
+    });
+}
 
 async function getCategories() {
     try {
