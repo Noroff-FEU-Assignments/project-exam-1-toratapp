@@ -8,3 +8,23 @@
     margin: 0 25px;
     min-height: 95vh;
 }
+
+input,
+label {
+    font-family: "Lato", "Verdana", sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    color: #0f272f;
+}
+
+label {
+    display: block;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+form > * {
+    flex: 1;
+}
