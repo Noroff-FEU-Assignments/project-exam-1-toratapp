@@ -7,7 +7,7 @@ body {
   color: #0f272f;
   margin: 0;
   background-color: #006d60;
-  background: url("../images/background-mobile.svg") no-repeat center center
+  background: url("../images/background-mobile.svg") repeat center center
     fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;

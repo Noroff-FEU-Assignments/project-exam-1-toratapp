@@ -25,6 +25,14 @@ form {
     display: flex;
     flex-direction: column;
 }
+
 form > * {
     flex: 1;
+}
+
+.form__errormessage {
+    color: darkred;
+    font-style: italic;
+    margin-top: 5px;
+    display: none;
 }

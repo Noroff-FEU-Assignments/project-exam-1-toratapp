@@ -1,6 +1,9 @@
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
+if (!id) {
+    location.href = "/";
+}
 const url = "https://teidsvag.com/onthebias-cms/wp-json/wp/v2/posts/" + id + "?_embed";
 const urlCategories = "https://teidsvag.com/onthebias-cms/wp-json/wp/v2/categories";
 const loader = document.querySelector(".loader");
