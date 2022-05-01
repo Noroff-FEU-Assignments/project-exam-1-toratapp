@@ -23,6 +23,22 @@
       src="https://kit.fontawesome.com/aa39e8c744.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Hotjar Tracking Code for https://onthebias.netlify.app/ -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 2949891, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
   </head>
   <body>
     <header>
@@ -54,31 +70,45 @@
     <section class="contact__main light-blue-bg">
       <h1>Contact me</h1>
       <div class="form-and-socials">
-        <form action="contact-success.html" method="get" class="contact__form">
-          <label for="name">Name&colon;</label>
-          <input type="text" name="name" id="name" />
-          <div class="form__errormessage" id="nameError">
-            Must be more than 5 characters
-          </div>
-          <label for="email">Email&colon;</label>
-          <input type="email" name="email" id="email" />
-          <div class="form__errormessage" id="emailError">
-            Must be a valid email address
-          </div>
-          <label for="subject">Subject&colon;</label>
-          <input type="text" name="subject" id="subject" />
-          <div class="form__errormessage" id="subjectError">
-            Must be more than 15 characters
-          </div>
-          <label for="message">Message&colon;</label>
-          <textarea name="message" rows="7" id="message"></textarea>
-          <div class="form__errormessage" id="messageError">
-            Must be more than 25 characters
-          </div>
-          <button class="contact__submit cta" id="contact__button">
-            send message
-          </button>
-        </form>
+        <div class="form-container">
+          <h2>Send me a message here:</h2>
+          <form
+            action="contact-success.html"
+            method="get"
+            class="contact__form"
+          >
+            <label for="name">Name&colon;</label>
+            <input type="text" name="name" id="name" />
+            <div class="form__errormessage" id="nameError">
+              Must be more than 5 characters
+            </div>
+            <label for="email">Email&colon;</label>
+            <input type="email" name="email" id="email" />
+            <div class="form__errormessage" id="emailError">
+              Must be a valid email address
+            </div>
+            <label for="subject">Subject&colon;</label>
+            <input type="text" name="subject" id="subject" />
+            <div class="form__errormessage" id="subjectError">
+              Must be more than 15 characters
+            </div>
+            <label for="message">Message&colon;</label>
+            <textarea name="message" rows="7" id="message"></textarea>
+            <div class="form__errormessage" id="messageError">
+              Must be more than 25 characters
+            </div>
+            <button class="contact__submit cta" id="contact__button">
+              send message
+            </button>
+          </form>
+        </div>
+        <div class="contact__socials">
+          <h2>Find me on my socials&colon;</h2>
+          <p>Facebook&colon; &commat;onthebiasblog</p>
+          <i class="fab fa-facebook-square"></i>
+          <p>Instagram&colon; &commat;onthebiasblog</p>
+          <i class="fab fa-instagram"></i>
+        </div>
       </div>
     </section>
     <footer></footer>

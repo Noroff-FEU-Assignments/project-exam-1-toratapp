@@ -3,6 +3,16 @@
     padding: 40px 0 15px 0;
 }
 
+.contact__main h2 {
+    margin: 0;
+    padding: 20px 0;
+}
+
+.contact__main p {
+    margin: 0;
+    padding: 8px 0;
+}
+
 .contact__main {
     padding: 0px 13px 50px 13px;
     margin: 0 25px;
@@ -19,6 +29,17 @@ label {
 
 label {
     display: block;
+    padding: 8px 0;
+}
+
+input {
+    margin-bottom: 22px;
+    padding: 6px;
+}
+
+input,
+textarea {
+    border: 2px solid #004964;
 }
 
 form {
@@ -31,8 +52,25 @@ form > * {
 }
 
 .form__errormessage {
-    color: darkred;
+    color: #e81800;
     font-style: italic;
     margin-top: 5px;
     display: none;
+}
+
+#contact__button {
+    cursor: pointer;
+    display: block;
+    width: 175px;
+    margin: 35px auto 0 auto;
+}
+
+.form-and-socials i {
+    display: block;
+    font-size: 3.6em;
+    color: #004964;
+}
+
+.form-container {
+    margin-bottom: 80px;
 }

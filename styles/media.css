@@ -65,13 +65,14 @@
         background: url("../images/background-desktop.png") no-repeat center center
             fixed;
     }
-    
+
     .h1-desktop {
         top: 81%;
     }
 
     .main,
-    .about__main {
+    .about__main,
+    .contact__main {
         padding: 0px 70px 50px 70px;
     }
 
@@ -238,6 +239,24 @@
     .modal {
         width: 80%;
     }
+
+    .form-and-socials {
+        display: flex;
+        gap: 150px;
+    }
+
+    .form-container {
+        flex: 2;
+    }
+
+    .contact__socials {
+        flex: 1;
+    }
+
+    #contact__button {
+        width: 195px;
+        margin: 35px 0 0 0;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -254,6 +273,16 @@
         width: auto;
         height: 80%;
     }
+
+    .form-container {
+        flex: 1;
+    }
+
+    .contact__socials {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
 }
 
 @media (min-width: 1400px) {
@@ -262,7 +291,8 @@
         padding: 0px 200px 0px 200px;
     }
 
-    .about__main {
+    .about__main,
+    .contact__main {
         padding: 0px 140px 50px 140px;
     }
 }
@@ -295,6 +325,10 @@
     .blog-posts-section .cta {
         width: 225px;
         height: 32px;
+    }
+
+    #contact__button {
+        width: 225px;
     }
 
     .other-pages-section {
@@ -343,7 +377,8 @@
         margin: auto;
     }
 
-    .about__main {
+    .about__main,
+    .contact__main {
     max-width: 1320px;
     margin: auto;
     }
