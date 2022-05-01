@@ -66,15 +66,18 @@
             Must be a valid email address
           </div>
           <label for="subject">Subject&colon;</label>
-          <input type="text" name="name" id="name" />
-          <div class="form__errormessage" id="nameError">
-            Must be more than 5 characters
+          <input type="text" name="subject" id="subject" />
+          <div class="form__errormessage" id="subjectError">
+            Must be more than 15 characters
           </div>
           <label for="message">Message&colon;</label>
-          <textarea name="message" rows="7"></textarea>
+          <textarea name="message" rows="7" id="message"></textarea>
           <div class="form__errormessage" id="messageError">
             Must be more than 25 characters
           </div>
+          <button class="contact__submit cta" id="contact__button">
+            send message
+          </button>
         </form>
       </div>
     </section>
