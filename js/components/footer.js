@@ -3,9 +3,9 @@ const footer = document.querySelector("footer");
 footer.innerHTML += `<div class="short-menu-and-socials">
                         <div class="short-menu">
                             <h4>Short menu</h4>
-                            <a href="blog.html">Blog</a>
-                            <a href="#">Sewing glossary</a>
-                            <a href="#">Projects gallery</a>
+                            <a href="blog.html" class="short-menu-link">Blog</a>
+                            <a href="#" class="short-menu-link">Sewing glossary</a>
+                            <a href="#" class="short-menu-link">Projects gallery</a>
                         </div>
                         <div class="social-media">
                             <div class="social-media__icons">

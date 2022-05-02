@@ -84,3 +84,7 @@
 .other-pages-section h2 {
     display: none;
 }
+
+.other-pages-section p {
+    color: #000 !important;
+}
