@@ -62,8 +62,7 @@
 
 @media (min-width: 800px) {
     body {
-        background: url("../images/background-desktop.png") no-repeat center center
-            fixed;
+        background: url("../images/background-desktop.png");
     }
 
     .h1-desktop {
