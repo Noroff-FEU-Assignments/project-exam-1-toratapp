@@ -54,6 +54,11 @@
         margin-bottom: 13px;
     }
 
+    .modal {
+        height: 62%;
+        width: auto;
+    }
+
     footer {
         width: 380px;
         margin: 50px auto 0px auto;
@@ -236,7 +241,8 @@
     }
 
     .modal {
-        width: 80%;
+        height: 80%;
+        width: auto;
     }
 
     .form-and-socials {
