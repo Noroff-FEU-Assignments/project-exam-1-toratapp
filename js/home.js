@@ -27,7 +27,6 @@ async function getPosts() {
                 const altText = featuredMedia[i].alt_text;
 
                 postsMobileContainer.innerHTML += ` <div class="latest-posts-mobile-container">
-                                                        <div>
                                                             <a class="blog-post-clickable" href="blog-post.html?id=${postId}">
                                                                 <div class="margin-13">
                                                                     <img src="${featuredImage}" alt="${altText}">
@@ -35,7 +34,6 @@ async function getPosts() {
                                                                 <h3>${title}</h3>
                                                                 ${excerpt}
                                                             </a>
-                                                        </div>
                                                     </div>`;
             }
         }

@@ -31,7 +31,7 @@
         margin-bottom: 0px;
     }
 
-    .latest-posts-mobile-container {
+    .latest-posts__mobile {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 0px;
@@ -357,9 +357,13 @@
         justify-content: left;
     }
 
-    .blog-posts-h1,
     .blog-posts-section {
         margin: 0px auto;
+        max-width: 1320px;
+    }
+
+    .blog-posts-h1 {
+        margin: 90px auto 0px auto;
         max-width: 1320px;
     }
 
@@ -379,13 +383,13 @@
         gap: 330px;
         padding: 0px 220px 0px 220px;
         max-width: 1160px;
-        margin: auto;
+        margin: 90px auto 0 auto;
     }
 
     .about__main,
     .contact__main {
     max-width: 1320px;
-    margin: auto;
+    margin: 90px auto 0 auto;
     }
 
     .modal {
