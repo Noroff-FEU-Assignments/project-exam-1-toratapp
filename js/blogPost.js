@@ -54,7 +54,7 @@ async function getPost() {
 getPost();
 
 function makeModal() {
-    const allImages = document.querySelectorAll("img");
+    const allImages = document.querySelectorAll(".wp-block-image");
     const backdropContainer = document.querySelector(".backdrop-container");
     const closeButton = document.querySelector(".close-button");
 
