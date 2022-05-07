@@ -196,11 +196,11 @@
 
     .latest-posts-section .cta {
         height: 27px;
-        width: 195px;
+        width: 194px;
     }
 
     .blog-posts-section .cta {
-        width: 182px;
+        width: 188px;
         height: 26px;
     }
 
@@ -312,6 +312,20 @@
     .contact__main {
         padding: 0px 140px 50px 140px;
     }
+
+    .latest-posts-section .cta {
+        height: 30px;
+        width: 214px;
+    }
+
+    .blog-posts-section .cta {
+        width: 203px;
+        height: 30px;
+    }
+
+    #contact__button {
+        width: 204px;
+    }
 }
 
 @media (min-width: 1600px) {
@@ -335,17 +349,17 @@
     }
 
     .latest-posts-section .cta {
-        height: 32px;
-        width: 235px;
+        height: 36px;
+        width: 252px;
     }
 
     .blog-posts-section .cta {
-        width: 225px;
-        height: 32px;
+        width: 243px;
+        height: 36px;
     }
 
     #contact__button {
-        width: 225px;
+        width: 237px;
     }
 
     .other-pages-section {
