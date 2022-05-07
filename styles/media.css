@@ -5,16 +5,13 @@
 }
 
 @media (min-width: 600px) {
-    .welcome-image-mobile {
+    .welcome-image-mobile,
+    .h1-mobile {
         display: none;
     }
 
     .welcome-image-desktop {
         display: block;
-    }
-
-    .h1-mobile {
-        display: none;
     }
 
     .h1-desktop {
@@ -76,16 +73,13 @@
 
     .main,
     .about__main,
-    .contact__main {
+    .contact__main,
+    .blog-posts-section {
         padding: 0px 70px 50px 70px;
     }
 
     .blog-posts-h1 {
         padding: 40px 70px 50px 70px;
-    }
-
-    .blog-posts-section {
-        padding: 0 70px 50px 70px;
     }
 
     .blog-posts-section h2 {
@@ -122,7 +116,9 @@
         padding: 0 0 0 50px;
       }
 
-    header label {
+    header label,
+    .latest-posts__mobile,
+    .other-pages-section h2 {
         display: none;
     }
 
@@ -136,10 +132,6 @@
 
     .h1-desktop {
         top: 83%;
-    }
-
-    .latest-posts__mobile {
-        display: none;
     }
 
     .latest-posts__carousel {
@@ -208,17 +200,14 @@
         padding: 13px 13px 70px 13px;
     }
 
-    .other-pages-section h2 {
-        display: none;
-    }
-
     .main {
         display: flex;
         gap: 80px;
         padding: 0px 80px 0px 80px;
     }
 
-    .blog-post-container {
+    .blog-post-container,
+    .form-container {
         flex: 2;
     }
 
@@ -236,7 +225,8 @@
         gap: 40px;
     }
 
-    .text-and-image > * {
+    .text-and-image > *,
+    .contact__socials {
         flex: 1;
     }
 
@@ -248,14 +238,6 @@
     .form-and-socials {
         display: flex;
         gap: 150px;
-    }
-
-    .form-container {
-        flex: 2;
-    }
-
-    .contact__socials {
-        flex: 1;
     }
 
     #contact__button {
@@ -300,7 +282,7 @@
     }
     
     h3 {
-    font-size: 1.4em;
+        font-size: 1.4em;
     }
 
     .main {
