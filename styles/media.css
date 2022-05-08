@@ -57,6 +57,10 @@
         margin-bottom: 13px;
     }
 
+    .main {
+        padding: 0px 60px 50px 60px;
+    }
+
     .modal {
         height: 62%;
         width: auto;
@@ -106,6 +110,10 @@
     .close-button {
         margin-right: 4%;
         top: 4%;
+    }
+
+    .main {
+        padding: 0px 140px 50px 140px;
     }
 }
 
@@ -214,8 +222,8 @@
 
     .main {
         display: flex;
-        gap: 80px;
-        padding: 0px 80px 0px 80px;
+        gap: 180px;
+        padding: 0px 120px 0px 120px;
     }
 
     .blog-post-container,
@@ -260,8 +268,8 @@
 
 @media (min-width: 1200px) {
     .main {
-        gap: 195px;
-        padding: 0px 150px 0px 150px;
+        gap: 240px;
+        padding: 0px 170px 0px 170px;
     }
 
     .text-and-image {
@@ -298,7 +306,7 @@
     }
 
     .main {
-        gap: 230px;
+        gap: 290px;
         padding: 0px 200px 0px 200px;
     }
 
