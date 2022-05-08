@@ -34,6 +34,12 @@
       gap: 0px;
     }
 
+    .other-pages-section h3,
+    .other-pages-section p {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
     .other-pages-section {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -142,6 +148,12 @@
     .latest-posts-section {
         position: relative;
         padding-bottom: 90px;
+    }
+
+    .latest-posts-section h3,
+    .latest-posts-section p {
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .arrow-next,
@@ -307,6 +319,10 @@
 
     #contact__button {
         width: 204px;
+    }
+
+    .copyright {
+        width: 255px;
     }
 }
 

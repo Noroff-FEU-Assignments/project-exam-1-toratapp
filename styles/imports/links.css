@@ -36,13 +36,15 @@ a {
     text-decoration-color: #e52f84;
 }
 
-.blog-post-clickable {
+.blog-post-clickable p,
+.blog-post-clickable p:visited {
     color: #0f272f !important;
 }
 
 .latest-posts__mobile h3:hover,
 .other-pages-section h3:hover,
-.blog-posts-section h2:hover {
+.blog-posts-section h2:hover,
+.blog-post-clickable h3:hover {
     text-decoration: underline;
 }
 
