@@ -64,8 +64,8 @@ function makeModal() {
             backdropContainer.classList.add("modal-backdrop");
             closeButton.style.display = "block";
             
-            document.onkeydown = function (e) {
-                if (e.key === "Escape") {
+            document.onkeydown = function (esc) {
+                if (esc.key === "Escape") {
                     closeButton.style.display = "none";
                     event.target.classList.remove("modal");
                     backdropContainer.classList.remove("modal-backdrop");

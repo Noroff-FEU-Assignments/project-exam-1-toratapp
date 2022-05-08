@@ -31,6 +31,10 @@
     margin-right: 25px;
 }
 
+.latest-posts__mobile .loader {
+    margin-left: 13px;
+}
+
 .latest-posts__carousel {
     display: none;
 }
