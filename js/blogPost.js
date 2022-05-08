@@ -41,7 +41,7 @@ async function getPost() {
 
             const categories = categoriesArray2[i].name;
 
-            postCategories.innerHTML += `<a>${categories}</a>`;
+            postCategories.innerHTML += `<a href="#">${categories}</a>`;
         }
 
         makeModal();
