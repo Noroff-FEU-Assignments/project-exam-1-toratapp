@@ -1,67 +1,37 @@
-## Project Exam 1
+# On the bias - sewing blog
 
-## Goal
+![image](https://raw.githubusercontent.com/toratapp/teidsvag-portfolio/main/images/onthebias-home-web.jpg)
 
-To put into practice the skills learned over your first year of studies.
+Noroff school assignment, Front-end development. The assignment was to design and build a website with blog posts and an about- and contact page.
 
-## Brief
-You have been tasked with creating a blog site. You can choose the design and topics covered on the blog, but it should have at least the following pages:
--	Home page
--	About page
--	List of blog posts
--	Blog post specific pages
--	Contact page.
 
-### Home Page
-The home page should have a ‘Latest Posts’ section which uses a carousel (slider) for users to click to view more posts. For example, by default the user can see four posts, then they can click an arrow on the right to view the next four posts, and click it again to view the next four posts. The user can also click back to view results they had previously seen. This must be implemented for desktop at least, but if you want a simpler layout for mobile, you can change it from being in a carousel.
+## Description
+On the bias is a sewing blog with posts about the author's projects and learning material that help you get better at sewing. In this assignment I learned how to make a carousel that shows a few posts at a time and lets the viewer click to see more rows of posts. I made the blog posts on a headless WordPress site and added them to my website with the Wordpress REST API. On the contact page, the form has JavaScript validation.
 
-### Blog Page
 
-The blog posts page should show the first 10 blogs, and the user should click to view more results which then show underneath the first 10 blogs.
+## Built With
+- HTML
+- CSS
+- JavaScript
+- Wordpress REST API
 
-### Blog Specific Page
 
-The content of the blog specific page should be dynamically built using a query string parameter based on whatever link the user clicked. The title of the blog specific page should change based on the blog that has been clicked on e.g. “My Blog | An Article I Wrote”.
+## Installing and running
+Clone the repo, open in Visual Studio Code and run with Live Server. You can also deploy with [Netlify](https://www.netlify.com/).
 
-If images on the blog post page are clicked, a modal should appear giving the user a bigger view of that image. Clicking outside the image should hide the modal.
 
-### Contact page
+## Contact
+You can contact me on my LinkedIn page:
 
-Create a contact us page, there should be 4 textboxes on this page.
--	Name (Should be more than 5 characters long)
--	Email address (Must be a valid email address)
--	Subject (Should be more than 15 characters long)
--	Message content (Should be more than 25 characters long)
+[My LinkedIn page](https://www.linkedin.com/in/toraoeidsvag)
 
-Please use JavaScript for validation, show error messages if the values in the textboxes do not meet the requirements.
 
-### WordPress
+## Acknowledgments
+- For the Carousel I picked up some tips from these videos on YouTube: [Karl Hadwen](https://www.youtube.com/watch?v=gor5BvT2z88) and [Noroff](https://www.youtube.com/watch?v=As2EuVlsQ9E)
+- I learned more about animation here: [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations)
+- To help me figure out how to make image modals I looked at these pages: [Kevin Powell](https://codepen.io/kevinpowell/pen/KKyOYvM), [Stack overflow 1](https://stackoverflow.com/questions/3369593/how-to-detect-escape-key-press-with-pure-js-or-jquery) and [Stack overflow 2](https://stackoverflow.com/questions/37926298/javascript-modal-close-image-by-clicking-anywhere-outside-the-image)
+- I had some difficulty figuring out how to show the date on the blog post correctly, this helped me: [Codegrepper]()
 
-The content for your website will be stored on a WordPress installation used as a Headless CMS. It’s important to note that we are only using WordPress to provide an API and add content for the blog. You should not submit a link to a WordPress site, but build your website using HTML, CSS and JavaScript and making a call to the WordPress REST API to fetch the data. 
+I read a lot of helpful learning material on [MDN Web Docs](https://developer.mozilla.org/en-US/) about forms, Flexbox and CSS Grids.
 
-The project has two aspects:
--	API from your WordPress installation
--	Your website built with HTML, CSS and JavaScript
-
-You will need to add at least 12 blogs for your website. You can use lorem ipsum for paragraphs if you need, but headings, images etc. should all make sense.
-
-Note that this is an exam, and therefore tutor support will be limited as per the study plan.
-
-## Level 1 Process
-
-1.	Decide on the theme for the blog you’re going to make
-2.	Create a prototype of the website
-3.	Install WordPress on your web host and add the blogs on the admin panel. 
-4.	Use the GitHub repo created by GitHub Classroom for your files and deploy to Netlify
-5.	Build your website using HTML, CSS and JavaScript making a call to the WordPress REST API to fetch your data.
-6.	Install Hotjar on your website.
-7.	Ask users to test your website, and adjust based on their feedback and any insights from Hotjar.
-8.	Write a report documenting your project (template provided in this repository).
-9.	Submit your report as a PDF and a link to both your Netlify deployment and your GitHub repo.
- 
-## Level 2 Process (optional)
-
-1.	You can try adding a sort, filter, or search to the blog posts page allowing users to find the blog post more easily that they’re looking for. 
-2.	Post the data from the contact form to WordPress so you have the details saved.
-3.	Allow users to submit comments on a blog post, and post this data to WordPress
-
+All icons I have used are from [FontAwesome](https://fontawesome.com/).
