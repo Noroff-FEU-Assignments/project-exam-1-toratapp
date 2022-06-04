@@ -19,6 +19,8 @@ On the bias is a sewing blog with posts about the author's projects and learning
 ## Installing and running
 Clone the repo, open in Visual Studio Code and run with Live Server. You can also deploy with [Netlify](https://www.netlify.com/).
 
+## Deployed site
+[On the bias](https://onthebias.netlify.app)
 
 ## Contact
 You can contact me on my LinkedIn page:
