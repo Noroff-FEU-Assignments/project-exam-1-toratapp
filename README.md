@@ -13,7 +13,7 @@ On the bias is a sewing blog with posts about the author's projects and learning
 - HTML
 - CSS
 - JavaScript
-- Wordpress REST API
+- [Wordpress REST API](https://developer.wordpress.org/rest-api)
 
 
 ## Installing and running
