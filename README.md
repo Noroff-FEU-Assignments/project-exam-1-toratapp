@@ -31,6 +31,6 @@ You can contact me on my LinkedIn page:
 ## Acknowledgments
 - For the Carousel I picked up some tips from these videos on YouTube: [Karl Hadwen](https://www.youtube.com/watch?v=gor5BvT2z88) and [Noroff](https://www.youtube.com/watch?v=As2EuVlsQ9E)
 - I learned more about animation here: [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations)
-- To help me figure out how to make image modals I looked at these pages: [Kevin Powell](https://codepen.io/kevinpowell/pen/KKyOYvM), [Stack overflow 1](https://stackoverflow.com/questions/3369593/how-to-detect-escape-key-press-with-pure-js-or-jquery) and [Stack overflow 2](https://stackoverflow.com/questions/37926298/javascript-modal-close-image-by-clicking-anywhere-outside-the-image)
+- To help me figure out how to make image modals I looked at these pages: [Kevin Powell codepen](https://codepen.io/kevinpowell/pen/KKyOYvM), [Stack overflow 1](https://stackoverflow.com/questions/3369593/how-to-detect-escape-key-press-with-pure-js-or-jquery) and [Stack overflow 2](https://stackoverflow.com/questions/37926298/javascript-modal-close-image-by-clicking-anywhere-outside-the-image)
 - I had some difficulty figuring out how to show the date on the blog post correctly, this helped me: [Codegrepper]()
 - All icons I have used are from [FontAwesome](https://fontawesome.com/)
