@@ -31,7 +31,4 @@ You can contact me on my LinkedIn page:
 - I learned more about animation here: [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations)
 - To help me figure out how to make image modals I looked at these pages: [Kevin Powell](https://codepen.io/kevinpowell/pen/KKyOYvM), [Stack overflow 1](https://stackoverflow.com/questions/3369593/how-to-detect-escape-key-press-with-pure-js-or-jquery) and [Stack overflow 2](https://stackoverflow.com/questions/37926298/javascript-modal-close-image-by-clicking-anywhere-outside-the-image)
 - I had some difficulty figuring out how to show the date on the blog post correctly, this helped me: [Codegrepper]()
-
-I read a lot of helpful learning material on [MDN Web Docs](https://developer.mozilla.org/en-US/) about forms, Flexbox and CSS Grids.
-
-All icons I have used are from [FontAwesome](https://fontawesome.com/).
+- All icons I have used are from [FontAwesome](https://fontawesome.com/)
